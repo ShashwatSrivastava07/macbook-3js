@@ -7,7 +7,7 @@ import { FaApple } from 'react-icons/fa'
 function App() {
   return (
     <>
-      <div className='w-full h-screen'>
+      <div className='main w-full h-screen'>
         
         <nav className='absolute text-white tracking-tighter top-0 -translate-x-1/2 left-1/2 flex gap-20 p-10 items-center'>
           <FaApple />
@@ -32,6 +32,10 @@ function App() {
 
         </Canvas>
 
+      </div>
+
+      <div className="screen-mob text-white font-500 text-5xl text-center w-full h-screen flex items-center justify-center p-10">
+        <p>Please Use Big Screen for better Experience</p>
       </div>
     </>
   )
