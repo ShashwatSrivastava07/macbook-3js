@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./fonts/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  background-color: #000000;
+}
+
+/* textStyles.css */
+
+/* Gradient text */
+.masked-text {
+  font-family: 'Helvetica, sans-serif';
+  background-image: linear-gradient(135deg, #6d5dfc, #cb67ac, #ff9472);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: -0.05em;
+  position: relative;
+  display: inline-block;
+}
+
